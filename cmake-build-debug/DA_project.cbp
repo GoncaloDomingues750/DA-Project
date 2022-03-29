@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/aed/DA-project/Driver.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/Driver.h">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/Package.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/Package.h">
+			<Option target="DA_project"/>
+		</Unit>
 		<Unit filename="C:/aed/DA-project/main.cpp">
 			<Option target="DA_project"/>
 		</Unit>

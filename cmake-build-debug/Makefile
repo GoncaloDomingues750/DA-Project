@@ -128,6 +128,54 @@ DA_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/build
 .PHONY : DA_project/fast
 
+Driver.obj: Driver.cpp.obj
+.PHONY : Driver.obj
+
+# target to build an object file
+Driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Driver.cpp.obj
+.PHONY : Driver.cpp.obj
+
+Driver.i: Driver.cpp.i
+.PHONY : Driver.i
+
+# target to preprocess a source file
+Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Driver.cpp.i
+.PHONY : Driver.cpp.i
+
+Driver.s: Driver.cpp.s
+.PHONY : Driver.s
+
+# target to generate assembly for a file
+Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Driver.cpp.s
+.PHONY : Driver.cpp.s
+
+Package.obj: Package.cpp.obj
+.PHONY : Package.obj
+
+# target to build an object file
+Package.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Package.cpp.obj
+.PHONY : Package.cpp.obj
+
+Package.i: Package.cpp.i
+.PHONY : Package.i
+
+# target to preprocess a source file
+Package.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Package.cpp.i
+.PHONY : Package.cpp.i
+
+Package.s: Package.cpp.s
+.PHONY : Package.s
+
+# target to generate assembly for a file
+Package.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Package.cpp.s
+.PHONY : Package.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DA_project
+	@echo ... Driver.obj
+	@echo ... Driver.i
+	@echo ... Driver.s
+	@echo ... Package.obj
+	@echo ... Package.i
+	@echo ... Package.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

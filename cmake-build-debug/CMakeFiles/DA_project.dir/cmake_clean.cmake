@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DA_project.dir/Driver.cpp.obj"
+  "CMakeFiles/DA_project.dir/Package.cpp.obj"
   "CMakeFiles/DA_project.dir/main.cpp.obj"
   "DA_project.exe"
   "DA_project.exe.manifest"
