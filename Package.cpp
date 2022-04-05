@@ -1,8 +1,9 @@
 #include "Package.h"
 
-Package::Package(int packageNumber, int weight, bool priority, int duration) {
+Package::Package(int packageNumber, int weight, int volume, bool priority, int duration) {
     this->packageNumber = packageNumber;
     this->weight = weight;
+    this->volume = volume;
     this->priority = priority;
     this->duration = duration;
 }
@@ -37,6 +38,14 @@ int Package::getDuration() const {
 
 void Package::setDuration(int nDuration) {
     duration = nDuration;
+}
+
+int Package::getVolume() const {
+    return volume;
+}
+
+void Package::setVolume(int nVolume) {
+    volume = nVolume;
 }
 
 
