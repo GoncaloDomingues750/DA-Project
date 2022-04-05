@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "../Tests/DA_project.exe"
+  "../Tests/DA_project.exe.manifest"
+  "../Tests/DA_project.pdb"
   "CMakeFiles/DA_project.dir/Driver.cpp.obj"
   "CMakeFiles/DA_project.dir/Package.cpp.obj"
+  "CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj"
+  "CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj"
   "CMakeFiles/DA_project.dir/main.cpp.obj"
-  "DA_project.exe"
-  "DA_project.exe.manifest"
-  "DA_project.pdb"
   "libDA_project.dll.a"
 )
 

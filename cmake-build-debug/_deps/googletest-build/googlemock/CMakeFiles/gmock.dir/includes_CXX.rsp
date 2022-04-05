@@ -1,0 +1,1 @@
+-IC:/aed/DA-project/cmake-build-debug/_deps/googletest-src/googlemock/include -IC:/aed/DA-project/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/aed/DA-project/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/aed/DA-project/cmake-build-debug/_deps/googletest-src/googletest
