@@ -225,6 +225,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f lib\googletest-master\googletest\CMakeFiles\gtest_main.dir\build.make lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+AppFunc.obj: AppFunc.cpp.obj
+.PHONY : AppFunc.obj
+
+# target to build an object file
+AppFunc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/AppFunc.cpp.obj
+.PHONY : AppFunc.cpp.obj
+
+AppFunc.i: AppFunc.cpp.i
+.PHONY : AppFunc.i
+
+# target to preprocess a source file
+AppFunc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/AppFunc.cpp.i
+.PHONY : AppFunc.cpp.i
+
+AppFunc.s: AppFunc.cpp.s
+.PHONY : AppFunc.s
+
+# target to generate assembly for a file
+AppFunc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/AppFunc.cpp.s
+.PHONY : AppFunc.cpp.s
+
 Driver.obj: Driver.cpp.obj
 .PHONY : Driver.obj
 
@@ -362,6 +386,9 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... AppFunc.obj
+	@echo ... AppFunc.i
+	@echo ... AppFunc.s
 	@echo ... Driver.obj
 	@echo ... Driver.i
 	@echo ... Driver.s

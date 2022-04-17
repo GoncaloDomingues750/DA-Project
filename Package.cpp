@@ -1,35 +1,27 @@
 #include "Package.h"
 
-Package::Package(int packageNumber, int weight, int volume, bool priority, int duration) {
-    this->packageNumber = packageNumber;
+Package::Package(int weight, int volume, int reward, int duration) {
     this->weight = weight;
     this->volume = volume;
-    this->priority = priority;
+    this->reward = reward;
     this->duration = duration;
 }
 
-int Package::getPackageNumber() const {
-    return packageNumber;
-}
 
 int Package::getWeight() const {
     return weight;
 }
 
-bool Package::getPriority() const {
-    return priority;
-}
-
-void Package::setPackageNumber(int pckNum) {
-    packageNumber = pckNum;
+int Package::getReward() const {
+    return reward;
 }
 
 void Package::setWeight(int nWeight) {
     weight = nWeight;
 }
 
-void Package::setPriority(bool nPriority) {
-    priority = nPriority;
+void Package::setReward(int nReward) {
+    reward = nReward;
 }
 
 int Package::getDuration() const {

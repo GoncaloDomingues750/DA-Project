@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../Tests/DA_project.exe"
   "../Tests/DA_project.exe.manifest"
   "../Tests/DA_project.pdb"
+  "CMakeFiles/DA_project.dir/AppFunc.cpp.obj"
   "CMakeFiles/DA_project.dir/Driver.cpp.obj"
   "CMakeFiles/DA_project.dir/Package.cpp.obj"
   "CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj"

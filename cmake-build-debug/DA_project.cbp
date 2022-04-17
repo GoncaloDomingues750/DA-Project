@@ -318,6 +318,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/aed/DA-project/AppFunc.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/AppFunc.h">
+			<Option target="DA_project"/>
+		</Unit>
 		<Unit filename="C:/aed/DA-project/Driver.cpp">
 			<Option target="DA_project"/>
 		</Unit>

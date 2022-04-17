@@ -9,7 +9,7 @@ include_directories(lib/googletest-master/googlemock/include)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/Tests")
 
-add_executable(DA_project main.cpp Package.h Package.cpp Driver.h Driver.cpp Tests/PackageTests.cpp Tests/DriverTests.cpp)
+add_executable(DA_project main.cpp Package.h Package.cpp Driver.h Driver.cpp Tests/PackageTests.cpp Tests/DriverTests.cpp AppFunc.cpp AppFunc.h)
 
 target_link_libraries(DA_project gtest gtest_main)
 

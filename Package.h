@@ -4,25 +4,22 @@ using namespace std;
 
 class Package{
 public:
-    Package(int packageNumber, int weight, int volume, bool priority, int duration);
+    Package(int weight, int volume, int reward, int duration);
 
-    int getPackageNumber() const;
     int getWeight() const;
-    bool getPriority() const;
+    int getReward() const;
     int getDuration() const;
     int getVolume() const;
 
-    void setPackageNumber(int pckNum);
     void setWeight(int nWeight);
-    void setPriority(bool nPriority);
+    void setReward(int nReward);
     void setDuration(int nDuration);
     void setVolume(int nVolume);
 
 private:
-    int packageNumber;
     int weight;
     int volume;
-    bool priority;
+    int reward;
     int duration;
 };
 
