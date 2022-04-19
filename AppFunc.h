@@ -9,4 +9,8 @@ using namespace std;
 void readDriverFiles(vector<Driver> &drivers);
 void readPackageFiles(vector<Package> &packages);
 
+int thirdScenario(vector<Package> &packages);
+
+bool cmpFunc(Package &package, Package &package1);
+
 #endif //DA_PROJECT_APPFUNC_H

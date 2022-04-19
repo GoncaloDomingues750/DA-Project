@@ -2,6 +2,7 @@
 #include "fstream"
 #include "vector"
 #include "AppFunc.h"
+#include "algorithm"
 using namespace std;
 
 
@@ -41,4 +42,25 @@ void readPackageFiles(vector<Package> &packages){
         packages.push_back(p1);
     }
     package.close();
+}
+
+bool cmpFunc(Package &package, Package &package1){
+    return package.getDuration() < package1.getDuration();
+}
+
+int thirdScenario(vector<Package> &packages){
+    const int workTime = 28800;
+    int sum = 0;
+    int final = 0;
+
+    sort(packages.begin(), packages.end(), cmpFunc);
+    cout << packages[0].getDuration() << " " << packages[1].getDuration() << endl;
+    for (auto & package : packages){
+        if (sum + package.getDuration() > workTime){
+            return final;
+        }
+        sum += package.getDuration();
+        final ++;
+    }
+    return final;
 }

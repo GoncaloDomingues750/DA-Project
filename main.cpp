@@ -9,5 +9,6 @@ int main() {
     vector<Driver> drivers;
     readDriverFiles(drivers);
     readPackageFiles(packages);
-    cout << packages.size() << " " << drivers.size();
+    cout << packages.size() << " " << drivers.size() << endl;
+    cout << thirdScenario(packages);
 }
