@@ -6,29 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/aed/DA-project/AppFunc.cpp
-iostream
--
-fstream
-C:/aed/DA-project/fstream
+C:/aed/DA-project/Menu.cpp
+Menu.h
+C:/aed/DA-project/Menu.h
+auxiliar.h
+C:/aed/DA-project/auxiliar.h
+
+C:/aed/DA-project/Menu.h
 vector
 C:/aed/DA-project/vector
-AppFunc.h
-C:/aed/DA-project/AppFunc.h
-algorithm
-C:/aed/DA-project/algorithm
+string
+C:/aed/DA-project/string
 
-C:/aed/DA-project/AppFunc.h
-iostream
--
+C:/aed/DA-project/auxiliar.h
+string
+C:/aed/DA-project/string
 vector
 C:/aed/DA-project/vector
-Package.h
-C:/aed/DA-project/Package.h
-Driver.h
-C:/aed/DA-project/Driver.h
-
-C:/aed/DA-project/Driver.h
-
-C:/aed/DA-project/Package.h
 

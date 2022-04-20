@@ -330,6 +330,12 @@
 		<Unit filename="C:/aed/DA-project/Driver.h">
 			<Option target="DA_project"/>
 		</Unit>
+		<Unit filename="C:/aed/DA-project/Menu.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/Menu.h">
+			<Option target="DA_project"/>
+		</Unit>
 		<Unit filename="C:/aed/DA-project/Package.cpp">
 			<Option target="DA_project"/>
 		</Unit>
@@ -340,6 +346,12 @@
 			<Option target="DA_project"/>
 		</Unit>
 		<Unit filename="C:/aed/DA-project/Tests/PackageTests.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/auxiliar.cpp">
+			<Option target="DA_project"/>
+		</Unit>
+		<Unit filename="C:/aed/DA-project/auxiliar.h">
 			<Option target="DA_project"/>
 		</Unit>
 		<Unit filename="C:/aed/DA-project/lib/googletest-master/googlemock/src/gmock-all.cc">

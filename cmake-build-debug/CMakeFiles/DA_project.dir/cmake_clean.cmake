@@ -4,9 +4,11 @@ file(REMOVE_RECURSE
   "../Tests/DA_project.pdb"
   "CMakeFiles/DA_project.dir/AppFunc.cpp.obj"
   "CMakeFiles/DA_project.dir/Driver.cpp.obj"
+  "CMakeFiles/DA_project.dir/Menu.cpp.obj"
   "CMakeFiles/DA_project.dir/Package.cpp.obj"
   "CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj"
   "CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj"
+  "CMakeFiles/DA_project.dir/auxiliar.cpp.obj"
   "CMakeFiles/DA_project.dir/main.cpp.obj"
   "libDA_project.dll.a"
 )

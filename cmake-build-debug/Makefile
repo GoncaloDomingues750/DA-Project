@@ -273,6 +273,30 @@ Driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Driver.cpp.s
 .PHONY : Driver.cpp.s
 
+Menu.obj: Menu.cpp.obj
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 Package.obj: Package.cpp.obj
 .PHONY : Package.obj
 
@@ -345,6 +369,30 @@ Tests/PackageTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.s
 .PHONY : Tests/PackageTests.cpp.s
 
+auxiliar.obj: auxiliar.cpp.obj
+.PHONY : auxiliar.obj
+
+# target to build an object file
+auxiliar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/auxiliar.cpp.obj
+.PHONY : auxiliar.cpp.obj
+
+auxiliar.i: auxiliar.cpp.i
+.PHONY : auxiliar.i
+
+# target to preprocess a source file
+auxiliar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/auxiliar.cpp.i
+.PHONY : auxiliar.cpp.i
+
+auxiliar.s: auxiliar.cpp.s
+.PHONY : auxiliar.s
+
+# target to generate assembly for a file
+auxiliar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/auxiliar.cpp.s
+.PHONY : auxiliar.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -392,6 +440,9 @@ help:
 	@echo ... Driver.obj
 	@echo ... Driver.i
 	@echo ... Driver.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... Package.obj
 	@echo ... Package.i
 	@echo ... Package.s
@@ -401,6 +452,9 @@ help:
 	@echo ... Tests/PackageTests.obj
 	@echo ... Tests/PackageTests.i
 	@echo ... Tests/PackageTests.s
+	@echo ... auxiliar.obj
+	@echo ... auxiliar.i
+	@echo ... auxiliar.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -9,6 +9,10 @@ CMakeFiles/DA_project.dir/AppFunc.cpp.obj
 CMakeFiles/DA_project.dir/Driver.cpp.obj
  C:/aed/DA-project/Driver.cpp
  C:/aed/DA-project/Driver.h
+CMakeFiles/DA_project.dir/Menu.cpp.obj
+ C:/aed/DA-project/Menu.cpp
+ C:/aed/DA-project/Menu.h
+ C:/aed/DA-project/auxiliar.h
 CMakeFiles/DA_project.dir/Package.cpp.obj
  C:/aed/DA-project/Package.cpp
  C:/aed/DA-project/Package.h
@@ -88,6 +92,9 @@ CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/aed/DA-project/Package.h
  C:/aed/DA-project/Tests/PackageTests.cpp
+CMakeFiles/DA_project.dir/auxiliar.cpp.obj
+ C:/aed/DA-project/auxiliar.cpp
+ C:/aed/DA-project/auxiliar.h
 CMakeFiles/DA_project.dir/main.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -111,5 +118,6 @@ CMakeFiles/DA_project.dir/main.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/aed/DA-project/AppFunc.h
  C:/aed/DA-project/Driver.h
+ C:/aed/DA-project/Menu.h
  C:/aed/DA-project/Package.h
  C:/aed/DA-project/main.cpp

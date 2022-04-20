@@ -9,6 +9,10 @@ CMakeFiles/DA_project.dir/AppFunc.cpp.obj: \
 CMakeFiles/DA_project.dir/Driver.cpp.obj: \
  ../Driver.cpp \
  ../Driver.h
+CMakeFiles/DA_project.dir/Menu.cpp.obj: \
+ ../Menu.cpp \
+ ../Menu.h \
+ ../auxiliar.h
 CMakeFiles/DA_project.dir/Package.cpp.obj: \
  ../Package.cpp \
  ../Package.h
@@ -88,6 +92,9 @@ CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj: \
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h \
  ../Package.h \
  ../Tests/PackageTests.cpp
+CMakeFiles/DA_project.dir/auxiliar.cpp.obj: \
+ ../auxiliar.cpp \
+ ../auxiliar.h
 CMakeFiles/DA_project.dir/main.cpp.obj: \
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h \
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h \
@@ -111,5 +118,6 @@ CMakeFiles/DA_project.dir/main.cpp.obj: \
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h \
  ../AppFunc.h \
  ../Driver.h \
+ ../Menu.h \
  ../Package.h \
  ../main.cpp
