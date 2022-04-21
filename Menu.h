@@ -14,6 +14,7 @@ private:
     void algoOptions();
     void mainMenu();
     void first(vector<Package> &packages, vector<Driver> &drivers);
+    void second(vector<Package> &packages, vector<Driver> &drivers);
     void third(vector<Package> &packages);
 public:
     bool nextState(vector<Package> &packages, vector<Driver> &drivers);

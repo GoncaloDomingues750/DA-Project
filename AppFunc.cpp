@@ -52,12 +52,24 @@ bool cmpFunc(Package &package, Package &package1){
 bool cmpFunc2(Package &package, Package &package1){
     double ratio = sqrt((package.getWeight() * package.getWeight()) + (package.getVolume() * package.getVolume()));
     double ratio1 = sqrt((package1.getWeight() * package1.getWeight()) + (package1.getVolume() * package1.getVolume()));
-    return ratio < ratio1;
+    return ratio > ratio1;
 }
 
 bool cmpFunc3(Driver &driver, Driver &driver1){
     double ratio = sqrt((driver.getMaxVol() * driver.getMaxVol()) + (driver.getMaxWeight() * driver.getMaxWeight()));
     double ratio1 = sqrt((driver1.getMaxVol() * driver1.getMaxVol()) + (driver1.getMaxWeight() * driver1.getMaxWeight()));
+    return ratio > ratio1;
+}
+
+bool cmpFunc4(Package &package, Package &package1){
+    double ratio = package.getReward() / (package.getVolume() * package.getVolume());
+    double ratio1 = package1.getReward() / (package1.getVolume() * package1.getVolume());
+    return ratio > ratio1;
+}
+
+bool cmpFunc5(Driver &driver, Driver &driver1){
+    double ratio = (driver.getMaxVol() * driver.getMaxWeight()) / driver.getCost();
+    double ratio1 = (driver1.getMaxVol() * driver1.getMaxWeight()) / driver1.getCost();
     return ratio > ratio1;
 }
 
@@ -86,6 +98,41 @@ vector<int> firstScenario(vector<Package> packages, vector<Driver> drivers){
     }
     ret.push_back(final);
     ret.push_back(dAux);
+    return ret;
+}
+
+vector<int> secondScenario(vector<Package> packages, vector<Driver> drivers){
+    int final = 0, aux = 0, profit = 0;
+    vector<int> ret;
+    sort(packages.begin(), packages.end(), cmpFunc4);
+    sort(drivers.begin(), drivers.end(), cmpFunc5);
+    for (auto &x : drivers){
+        vector<int> vanP = {};
+        int weightCap = x.getMaxWeight();
+        int volCap = x.getMaxVol();
+        int pos = 0, nProfit = 0;
+        for (auto &y : packages){
+            if ((weightCap - y.getWeight()) < 0 || (volCap - y.getVolume()) < 0){
+                break;
+            } else{
+                weightCap -= y.getWeight();
+                volCap -= y.getVolume();
+                vanP.push_back(pos);
+                nProfit += y.getReward();
+                pos ++;
+            }
+        }
+        if ((nProfit - x.getCost()) >= 0){
+            profit += nProfit;
+            profit -= x.getCost();
+            aux++;
+            final += vanP.size();
+            for (auto &z : vanP)packages.erase(packages.begin() + z);
+        }
+    }
+    ret.push_back(final);
+    ret.push_back(aux);
+    ret.push_back(profit);
     return ret;
 }
 

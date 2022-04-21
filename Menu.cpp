@@ -25,6 +25,10 @@ bool Menu::nextState(vector<Package> &packages, vector<Driver> &drivers) {
             first(packages, drivers);
             state = 5;
             return true;
+        case 3:
+            second(packages, drivers);
+            state = 5;
+            return true;
         case 4:
             third(packages);
             state = 5;
@@ -59,7 +63,11 @@ void Menu::algoOptions() {
 
 void Menu::first(vector<Package> &packages, vector<Driver> &drivers) {
     vector<int> final = firstScenario(packages, drivers);
+    double fin = final[0];
+    double pEfficiency = fin / packages.size();
+    int efficiency = pEfficiency * 100;
     cout << "| " << final[0] << " out of " << packages.size() << " packages were delivered using " << final[1] << " drivers!" << endl;
+    cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
     cout << "| Click enter!" << endl;
     getch();
@@ -67,7 +75,24 @@ void Menu::first(vector<Package> &packages, vector<Driver> &drivers) {
 
 void Menu::third(vector<Package> &packages) {
     int final = thirdScenario(packages);
+    double fin = final;
+    double pEfficiency = fin / packages.size();
+    int efficiency = pEfficiency * 100;
     cout << "| " << final << " out of " << packages.size() << " express packages were delivered" << endl;
+    cout << "| The company was " << efficiency << "% efficient!" << endl;
+    cout << "| Thanks for using our program!" << endl;
+    cout << "| Click enter!" << endl;
+    getch();
+}
+
+void Menu::second(vector<Package> &packages, vector<Driver> &drivers) {
+    vector<int> final = secondScenario(packages, drivers);
+    double fin = final[0];
+    double pEfficiency = fin / packages.size();
+    int efficiency = pEfficiency * 100;
+    cout << "| " << final[0] << " out of " << packages.size() << " packages were delivered using " << final[1] << " drivers!" << endl;
+    cout << "| The total profit of the day was " << final[2] << " euros!" << endl;
+    cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
     cout << "| Click enter!" << endl;
     getch();
