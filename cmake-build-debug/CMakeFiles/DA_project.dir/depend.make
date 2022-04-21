@@ -10,8 +10,11 @@ CMakeFiles/DA_project.dir/Driver.cpp.obj: \
  ../Driver.cpp \
  ../Driver.h
 CMakeFiles/DA_project.dir/Menu.cpp.obj: \
+ ../AppFunc.h \
+ ../Driver.h \
  ../Menu.cpp \
  ../Menu.h \
+ ../Package.h \
  ../auxiliar.h
 CMakeFiles/DA_project.dir/Package.cpp.obj: \
  ../Package.cpp \

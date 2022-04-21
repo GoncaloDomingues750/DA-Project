@@ -3,6 +3,7 @@
 #include "vector"
 #include "AppFunc.h"
 #include "algorithm"
+#include "cmath"
 using namespace std;
 
 
@@ -48,13 +49,53 @@ bool cmpFunc(Package &package, Package &package1){
     return package.getDuration() < package1.getDuration();
 }
 
+bool cmpFunc2(Package &package, Package &package1){
+    double ratio = sqrt((package.getWeight() * package.getWeight()) + (package.getVolume() * package.getVolume()));
+    double ratio1 = sqrt((package1.getWeight() * package1.getWeight()) + (package1.getVolume() * package1.getVolume()));
+    return ratio < ratio1;
+}
+
+bool cmpFunc3(Driver &driver, Driver &driver1){
+    double ratio = sqrt((driver.getMaxVol() * driver.getMaxVol()) + (driver.getMaxWeight() * driver.getMaxWeight()));
+    double ratio1 = sqrt((driver1.getMaxVol() * driver1.getMaxVol()) + (driver1.getMaxWeight() * driver1.getMaxWeight()));
+    return ratio > ratio1;
+}
+
+vector<int> firstScenario(vector<Package> packages, vector<Driver> drivers){
+
+    int final = 0, aux = 0, dAux;
+    vector<int> ret;
+    sort(packages.begin(), packages.end(), cmpFunc2);
+    sort(drivers.begin(), drivers.end(), cmpFunc3);
+    for (auto &x : drivers){
+        int weightCap = x.getMaxWeight();
+        int volCap = x.getMaxVol();
+        for (auto &y : packages){
+            int pos = 0;
+            if ((weightCap - y.getWeight()) < 0 || (volCap - y.getVolume()) < 0){
+                break;
+            } else{
+                weightCap -= y.getWeight();
+                volCap -= y.getVolume();
+                packages.erase(packages.begin() + pos);
+                final ++;
+                dAux = aux;
+            }
+        }
+        aux++;
+    }
+    ret.push_back(final);
+    ret.push_back(dAux);
+    return ret;
+}
+
 int thirdScenario(vector<Package> &packages){
     const int workTime = 28800;
     int sum = 0;
     int final = 0;
 
+
     sort(packages.begin(), packages.end(), cmpFunc);
-    cout << packages[0].getDuration() << " " << packages[1].getDuration() << endl;
     for (auto & package : packages){
         if (sum + package.getDuration() > workTime){
             return final;

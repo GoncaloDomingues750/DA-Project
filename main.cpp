@@ -12,9 +12,8 @@ int main() {
     readPackageFiles(packages);
     Menu menu;
     bool run = true;
-
     while (run) {
-        run = menu.nextState();
+        run = menu.nextState(packages, drivers);
     }
     return 0;
 }

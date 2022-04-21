@@ -2,6 +2,9 @@
 #define DA_PROJECT_MENU_H
 #include "vector"
 #include "string"
+#include "Package.h"
+#include "Driver.h"
+#include "AppFunc.h"
 using namespace std;
 class Menu {
 private:
@@ -10,7 +13,9 @@ private:
     int state = 0;
     void algoOptions();
     void mainMenu();
+    void first(vector<Package> &packages, vector<Driver> &drivers);
+    void third(vector<Package> &packages);
 public:
-    bool nextState();
+    bool nextState(vector<Package> &packages, vector<Driver> &drivers);
 };
 #endif //DA_PROJECT_MENU_H
