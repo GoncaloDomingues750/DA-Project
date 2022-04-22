@@ -1,6 +1,6 @@
 # DA Project
 
-Indicações para correr o programa:
+## Indicações para correr o programa:
 
 Para o nosso projeto funcionar, basta correr o programa e ele compila sozinho e corre, depois é só seguir o menu implementado.
 
