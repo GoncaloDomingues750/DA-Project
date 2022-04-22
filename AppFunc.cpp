@@ -45,6 +45,25 @@ void readPackageFiles(vector<Package> &packages){
     package.close();
 }
 
+void readExpressFiles(vector<Package> &expPackages){
+    ifstream package;
+    int volume, weight, reward, duration;
+
+    package.open("../Expresso.txt");
+    if (!package.is_open()){
+        cerr << "Unable to open express packages file!";
+        exit(1);
+    }
+    string line;
+    getline(package, line);
+
+    while (package >> volume >> weight >> reward >> duration){
+        Package p1(weight, volume, reward, duration);
+        expPackages.push_back(p1);
+    }
+    package.close();
+}
+
 bool cmpFunc(Package &package, Package &package1){
     return package.getDuration() < package1.getDuration();
 }

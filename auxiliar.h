@@ -6,21 +6,16 @@
 using namespace std;
 
 
+void clearSCR(); //Clears the screen
 
-void clearSCR();
+void title(const string& string = ""); //Displays title
 
-void title(const string& string = "");
+void showMenu(const vector<string>& options, int settingsOp = 0); //Displays menu options
 
-void showMenu(const vector<string>& options, int settingsOp = 0);
+int getInt(const string& text = "", const string& text2 = ""); //Gets the user's option as an integer
 
-void endMessage(const string& string = "");
+double getDouble(const string& text = "", const string& text2 = ""); //Gets the user's option as a double
 
-bool errorFunc(const string& error);
-
-int getInt(const string& text = "", const string& text2 = "");
-
-double getDouble(const string& text = "", const string& text2 = "");
-
-string getString(const string& text = "", const string& text2 = "");
+string getString(const string& text = "", const string& text2 = ""); //Gets the user's option as a string
 
 #endif //CODE_AUXILIAR_H

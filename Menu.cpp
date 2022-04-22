@@ -12,7 +12,7 @@ void Menu::mainMenu() {
     else state = 1;
 }
 
-bool Menu::nextState(vector<Package> &packages, vector<Driver> &drivers) {
+bool Menu::nextState(vector<Package> &packages, vector<Driver> &drivers, vector<Package> &expPackages) {
     clearSCR();
     switch (state) {
         case 0:
@@ -30,7 +30,7 @@ bool Menu::nextState(vector<Package> &packages, vector<Driver> &drivers) {
             state = 5;
             return true;
         case 4:
-            third(packages);
+            third(expPackages);
             state = 5;
             return true;
         default:

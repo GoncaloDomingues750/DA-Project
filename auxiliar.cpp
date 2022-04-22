@@ -17,26 +17,6 @@ void title(const string& string) {
     cout << "-----------------------------------------" << endl;
 }
 
-void endMessage(const string& string) {
-    if (!string.empty()) {
-        cout << "| " << string << " successfully " << endl;
-    }
-    cout << "| Click enter to go back " << endl << "|";
-    getch();
-}
-
-bool errorFunc(const string& error) {
-    cout << "| " << error << endl;
-    cout << "| 1- Repeat " << endl;
-    cout << "| 2- Go back " << endl;
-    int valor = getInt("Option");
-    while(valor != 1 && valor!=2){
-        cout << "Invalid option please input a valid option " << endl;
-        valor = getInt("Option");
-    }
-    return valor==2;
-}
-
 void showMenu(const vector<string>& options, int settingsOp) {
 
     for (int i = 1; i <= options.size(); ++i) {
