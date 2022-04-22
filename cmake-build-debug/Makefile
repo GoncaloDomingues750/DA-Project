@@ -321,30 +321,6 @@ Package.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Package.cpp.s
 .PHONY : Package.cpp.s
 
-Tests/DriverTests.obj: Tests/DriverTests.cpp.obj
-.PHONY : Tests/DriverTests.obj
-
-# target to build an object file
-Tests/DriverTests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj
-.PHONY : Tests/DriverTests.cpp.obj
-
-Tests/DriverTests.i: Tests/DriverTests.cpp.i
-.PHONY : Tests/DriverTests.i
-
-# target to preprocess a source file
-Tests/DriverTests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.i
-.PHONY : Tests/DriverTests.cpp.i
-
-Tests/DriverTests.s: Tests/DriverTests.cpp.s
-.PHONY : Tests/DriverTests.s
-
-# target to generate assembly for a file
-Tests/DriverTests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DA_project.dir\build.make CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.s
-.PHONY : Tests/DriverTests.cpp.s
-
 Tests/PackageTests.obj: Tests/PackageTests.cpp.obj
 .PHONY : Tests/PackageTests.obj
 
@@ -446,9 +422,6 @@ help:
 	@echo ... Package.obj
 	@echo ... Package.i
 	@echo ... Package.s
-	@echo ... Tests/DriverTests.obj
-	@echo ... Tests/DriverTests.i
-	@echo ... Tests/DriverTests.s
 	@echo ... Tests/PackageTests.obj
 	@echo ... Tests/PackageTests.i
 	@echo ... Tests/PackageTests.s

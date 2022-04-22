@@ -121,24 +121,10 @@ CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\aed\DA-project\Tests\PackageTests.cpp -o CMakeFiles\DA_project.dir\Tests\PackageTests.cpp.s
 
-CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj: CMakeFiles/DA_project.dir/flags.make
-CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj: CMakeFiles/DA_project.dir/includes_CXX.rsp
-CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj: ../Tests/DriverTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DA_project.dir\Tests\DriverTests.cpp.obj -c C:\aed\DA-project\Tests\DriverTests.cpp
-
-CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\aed\DA-project\Tests\DriverTests.cpp > CMakeFiles\DA_project.dir\Tests\DriverTests.cpp.i
-
-CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\aed\DA-project\Tests\DriverTests.cpp -o CMakeFiles\DA_project.dir\Tests\DriverTests.cpp.s
-
 CMakeFiles/DA_project.dir/AppFunc.cpp.obj: CMakeFiles/DA_project.dir/flags.make
 CMakeFiles/DA_project.dir/AppFunc.cpp.obj: CMakeFiles/DA_project.dir/includes_CXX.rsp
 CMakeFiles/DA_project.dir/AppFunc.cpp.obj: ../AppFunc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DA_project.dir/AppFunc.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DA_project.dir/AppFunc.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DA_project.dir\AppFunc.cpp.obj -c C:\aed\DA-project\AppFunc.cpp
 
 CMakeFiles/DA_project.dir/AppFunc.cpp.i: cmake_force
@@ -152,7 +138,7 @@ CMakeFiles/DA_project.dir/AppFunc.cpp.s: cmake_force
 CMakeFiles/DA_project.dir/Menu.cpp.obj: CMakeFiles/DA_project.dir/flags.make
 CMakeFiles/DA_project.dir/Menu.cpp.obj: CMakeFiles/DA_project.dir/includes_CXX.rsp
 CMakeFiles/DA_project.dir/Menu.cpp.obj: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DA_project.dir/Menu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DA_project.dir/Menu.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DA_project.dir\Menu.cpp.obj -c C:\aed\DA-project\Menu.cpp
 
 CMakeFiles/DA_project.dir/Menu.cpp.i: cmake_force
@@ -166,7 +152,7 @@ CMakeFiles/DA_project.dir/Menu.cpp.s: cmake_force
 CMakeFiles/DA_project.dir/auxiliar.cpp.obj: CMakeFiles/DA_project.dir/flags.make
 CMakeFiles/DA_project.dir/auxiliar.cpp.obj: CMakeFiles/DA_project.dir/includes_CXX.rsp
 CMakeFiles/DA_project.dir/auxiliar.cpp.obj: ../auxiliar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DA_project.dir/auxiliar.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DA_project.dir/auxiliar.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DA_project.dir\auxiliar.cpp.obj -c C:\aed\DA-project\auxiliar.cpp
 
 CMakeFiles/DA_project.dir/auxiliar.cpp.i: cmake_force
@@ -183,7 +169,6 @@ DA_project_OBJECTS = \
 "CMakeFiles/DA_project.dir/Package.cpp.obj" \
 "CMakeFiles/DA_project.dir/Driver.cpp.obj" \
 "CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj" \
-"CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj" \
 "CMakeFiles/DA_project.dir/AppFunc.cpp.obj" \
 "CMakeFiles/DA_project.dir/Menu.cpp.obj" \
 "CMakeFiles/DA_project.dir/auxiliar.cpp.obj"
@@ -195,7 +180,6 @@ DA_project_EXTERNAL_OBJECTS =
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/Package.cpp.obj
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/Driver.cpp.obj
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj
-../Tests/DA_project.exe: CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/AppFunc.cpp.obj
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/Menu.cpp.obj
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/auxiliar.cpp.obj
@@ -206,7 +190,7 @@ DA_project_EXTERNAL_OBJECTS =
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/linklibs.rsp
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/objects1.rsp
 ../Tests/DA_project.exe: CMakeFiles/DA_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ..\Tests\DA_project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\aed\DA-project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ..\Tests\DA_project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DA_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

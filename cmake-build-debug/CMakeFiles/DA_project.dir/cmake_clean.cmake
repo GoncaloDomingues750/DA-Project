@@ -6,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/DA_project.dir/Driver.cpp.obj"
   "CMakeFiles/DA_project.dir/Menu.cpp.obj"
   "CMakeFiles/DA_project.dir/Package.cpp.obj"
-  "CMakeFiles/DA_project.dir/Tests/DriverTests.cpp.obj"
   "CMakeFiles/DA_project.dir/Tests/PackageTests.cpp.obj"
   "CMakeFiles/DA_project.dir/auxiliar.cpp.obj"
   "CMakeFiles/DA_project.dir/main.cpp.obj"

@@ -342,9 +342,6 @@
 		<Unit filename="C:/aed/DA-project/Package.h">
 			<Option target="DA_project"/>
 		</Unit>
-		<Unit filename="C:/aed/DA-project/Tests/DriverTests.cpp">
-			<Option target="DA_project"/>
-		</Unit>
 		<Unit filename="C:/aed/DA-project/Tests/PackageTests.cpp">
 			<Option target="DA_project"/>
 		</Unit>

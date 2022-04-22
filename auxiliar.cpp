@@ -1,9 +1,6 @@
 #include "auxiliar.h"
 #include "iostream"
-#include "fstream"
-#include <ctime>
 #include "vector"
-#include<conio.h>
 
 using namespace std;
 
