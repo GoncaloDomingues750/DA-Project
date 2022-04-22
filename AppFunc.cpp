@@ -81,8 +81,8 @@ bool cmpFunc3(Driver &driver, Driver &driver1){
 }
 
 bool cmpFunc4(Package &package, Package &package1){
-    double ratio = package.getReward() / (package.getVolume() * package.getVolume());
-    double ratio1 = package1.getReward() / (package1.getVolume() * package1.getVolume());
+    double ratio = package.getReward() / (package.getVolume() * package.getWeight());
+    double ratio1 = package1.getReward() / (package1.getVolume() * package1.getWeight());
     return ratio > ratio1;
 }
 

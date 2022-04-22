@@ -83,6 +83,7 @@ void Menu::third(vector<Package> &packages) {
     cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
     cout << "| Click Enter!" << endl;
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
     cin.get();
 }
 
@@ -96,5 +97,6 @@ void Menu::second(vector<Package> &packages, vector<Driver> &drivers) {
     cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
     cout << "| Click Enter!" << endl;
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
     cin.get();
 }
