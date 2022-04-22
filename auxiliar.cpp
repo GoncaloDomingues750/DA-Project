@@ -1,6 +1,6 @@
 #include "auxiliar.h"
 #include "iostream"
-#include "vector"
+#include <climits>
 
 using namespace std;
 
@@ -24,18 +24,18 @@ void showMenu(const vector<string>& options, int settingsOp) {
 
 int getInt(const string& text, const string& text2) {
     int number;
-    cout << "| " << text << "?" << " " << text2 << endl << "|";
+    cout << "| " << text << " " << text2 << endl << "|";
     cin >> number;
 
     if(cin.fail())
     {
         cin.clear();
         cin.ignore(INT_MAX,'\n');
-        cout << "Invalid input";
+        cout << "Invalid input ";
         return getInt(text,text2);
     }
     else if(cin.peek()!='\n') {
-        cout << "Invalid input";
+        cout << "Invalid input ";
         cin.ignore(INT_MAX, '\n');
         return getInt(text, text2);
     }
@@ -52,22 +52,14 @@ double getDouble(const string& text, const string& text2) {
     {
         cin.clear();
         cin.ignore(INT_MAX,'\n');
-        cout << "Invalid input";
+        cout << "Invalid input ";
         return getDouble(text,text2);
     }
     else if(cin.peek()!='\n') {
-        cout << "Invalid input";
+        cout << "Invalid input ";
         cin.ignore(INT_MAX, '\n');
         return getDouble(text, text2);
     }
 
     return number;
-}
-
-string getString(const string& text, const string& text2) {
-    string x;
-    cout << "| " << text << "?" << " " << text2 << endl << "|";
-    if (cin.peek() == '\n') cin.ignore(INT_MAX, '\n');
-    getline(cin, x);
-    return x;
 }

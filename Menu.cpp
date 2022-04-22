@@ -1,13 +1,13 @@
+#include <limits>
 #include "Menu.h"
 #include "auxiliar.h"
-#include "conio.h"
 
 void Menu::mainMenu() {
     title("Main Menu");
     showMenu(menuOptions);
 
-    int key = getInt("What's your option");
-    while (key < 1 || key > 2) key = getInt("Not a valid option. What's your option");
+    int key = getInt("Choose an option");
+    while (key < 1 || key > 2) key = getInt("Not a valid option. What's your option?");
     if (key == 2)state = 5;
     else state = 1;
 }
@@ -38,12 +38,12 @@ bool Menu::nextState(vector<Package> &packages, vector<Driver> &drivers, vector<
     }}
 
 void Menu::algoOptions() {
-    title("Choose a proccess:");
+    title("Choose a process:");
     showMenu(algOptions);
 
-    int key = getInt("What's your option");
+    int key = getInt("Choose an option");
     while (key<1 || key>4){
-        key = getInt("Not a valid option. What's your option");
+        key = getInt("Not a valid option. What's your option?");
     }
 
     switch (key) {
@@ -69,8 +69,9 @@ void Menu::first(vector<Package> &packages, vector<Driver> &drivers) {
     cout << "| " << final[0] << " out of " << packages.size() << " packages were delivered using " << final[1] << " drivers!" << endl;
     cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
-    cout << "| Click enter!" << endl;
-    getch();
+    cout << "| Click Enter!";
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    cin.get();
 }
 
 void Menu::third(vector<Package> &packages) {
@@ -81,8 +82,8 @@ void Menu::third(vector<Package> &packages) {
     cout << "| " << final << " out of " << packages.size() << " express packages were delivered" << endl;
     cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
-    cout << "| Click enter!" << endl;
-    getch();
+    cout << "| Click Enter!";
+    cin.get();
 }
 
 void Menu::second(vector<Package> &packages, vector<Driver> &drivers) {
@@ -94,6 +95,6 @@ void Menu::second(vector<Package> &packages, vector<Driver> &drivers) {
     cout << "| The total profit of the day was " << final[2] << " euros!" << endl;
     cout << "| The company was " << efficiency << "% efficient!" << endl;
     cout << "| Thanks for using our program!" << endl;
-    cout << "| Click enter!" << endl;
-    getch();
+    cout << "| Click Enter!";
+    cin.get();
 }
